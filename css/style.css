@@ -1,0 +1,195 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* eliminar la linea del subrayado de todos los links y cambie la flecha por una mano */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+header nav {
+    display: flex;
+    justify-content: flex-end;
+}
+header nav .nav-right-section {
+    width: 250px;
+    /* altura automatica para que tome la altura del elemento padre */
+    height: auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+nav .nav-right-section a {
+    margin-right: 10px;
+    color: #000000;
+}
+nav .nav-right-section .menu-icon {
+    background-image: url('./apps_FILL0_wght400_GRAD0_opsz48\ \(1\).svg');
+    /* si la imagen es muy pequeña e intenta llenar el espacio total del contenedor se repetira a menos de que se use el siguiente comando */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* tamaño de la imagen igual al del contenedor */
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+    opacity: .55;
+    padding: 4px;
+}
+nav .nav-right-section img {
+    border-radius: 50px;
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+}
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+main .main-logo {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-logo img{
+    width: 272px;
+}
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+}
+main .main-input-container {
+    width: 525px;
+    border-radius: 100px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 8px 0 14px;
+}
+main .main-input input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    /* Sirve para quitar el borde generado cuando damos click a un input */
+    outline: none;
+}
+main .main-input-container:hover {
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+}
+main .main-input .search-icon {
+    background-image: url('./search_FILL0_wght400_GRAD0_opsz48.svg');
+    /* background-repeat: no-repeat; */
+    opacity: .45;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input .micro-icon1 {
+    background-image: url('./mic.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    padding: 0 8px;
+}
+main .main-input .micro-icon2 {
+    background-image: url('./image.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    padding: 0 8px;
+}
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* main .main-buttons div {
+    justify-content: space-between;
+} */
+main .main-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 16px;
+    margin: 0 6px;
+}
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgb(0, 0, 0, 0.1);
+    color: #222;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0; 
+
+}
+footer .region {
+    height: 50px;
+    width: 100vw;
+    color: #5f6368;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    position: absolute;
+    bottom: 24px; 
+}
+footer .region p {
+    margin-left: 30px;
+}
+footer .footer-info {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    position: absolute;
+    bottom: 0; 
+}
+footer .footer-info ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+footer .footer-info .footer-left {
+    justify-self: left;
+    padding-left: 40px
+}
+footer .footer-info .footer-right {
+    justify-self: right;
+    padding-right: 40px;
+}
+footer .footer-info ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
